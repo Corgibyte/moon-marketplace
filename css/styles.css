@@ -18,3 +18,11 @@ body {
 body > h1,h3 {
   color:white;
 }
+
+#payment {
+  display: none;
+}
+
+#receipt {
+  display: none;
+}

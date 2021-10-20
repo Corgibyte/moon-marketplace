@@ -19,7 +19,7 @@
       condition: Used/light cosmic damage <br>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt vel adipisci asperiores quidem aspernatur debitis, facere officiis libero explicabo excepturi?
     </p>
-    <button id="buy1" class="btn bg-secondary">Take Me With You!</button>
+    <button value="The Moon" id="buy1" class="btn bg-secondary buy">Take Me With You!</button>
   </div>
   
   <div class="card">
@@ -30,7 +30,7 @@
       condition: Used/fair<br>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi in excepturi nulla aliquid eius dolor maiores corrupti illum vero quibusdam!
     </p>
-    <button id="buy2" class="btn bg-secondary">Take Me With You!</button>
+    <button value="Encedalus" id="buy2" class="btn bg-secondary buy">Take Me With You!</button>
   </div>
   
   <div class="card">
@@ -41,7 +41,7 @@
       condition: Like New<br>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, suscipit. Enim vero numquam labore reprehenderit blanditiis soluta id omnis debitis!
     </p>
-    <button id="buy3" class="btn bg-secondary">Take Me With You!</button>
+    <button value="Europa" id="buy3" class="btn bg-secondary buy">Take Me With You!</button>
   </div>
 
   <div class="card">
@@ -52,7 +52,7 @@
       condition: Well Loved<br>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime repellendus maiores quisquam quod accusamus. Fugiat voluptatibus sit voluptatum soluta?
     </p>
-    <button id="buy4" class="btn bg-secondary">Take Me With You!</button>
+    <button value="Ganymede" id="buy4" class="btn bg-secondary buy">Take Me With You!</button>
   </div>
 
   <div class="card">
@@ -63,11 +63,12 @@
       condition: Like New<br>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum soluta accusantium possimus. Aliquam facilis odit provident unde laboriosam enim.
     </p>
-    <button id="buy5" class="btn bg-secondary">Take Me With You!</button>
+    <button value="Titan" id="buy5" class="btn bg-secondary buy">Take Me With You!</button>
   </div>
 
   <!-- Name, email, dob, payment type, mailing address -->
   <div class="card" id="payment">
+    <h4 id="product"></h4>
     <form id="formOne">
       <label for="name">Name: </label>
       <input id="name" class="form-control" type="text">
@@ -83,5 +84,21 @@
       <button id ="submitForm" class="btn bg-secondary" type="submit">Purchase a moon!</button>
     </form>
   </div>
+
+  <div class="jumbotron" id="receipt">
+    <div>
+      <h2>Moon Marketplace</h2>
+    </div>
+    <h4 id="receiptTitle">Receipt for purchase of <span class="titleProduct"></span></h4>
+    <p>Thank you, <span id="buyerName"></span>, for the purchase of your brand new moon: <span class="titleProduct"></span>.</p>
+    <br>
+    <p><span class="titleProduct"></span>: $1,000,000</p>
+    <br>
+    <p>Total: $1,000,000</p>
+
+    <p>Transaction: <span id="cardLastFive"></span></p>
+  </div>
+
+
 </body>
 </html>
